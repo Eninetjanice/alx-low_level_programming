@@ -1,9 +1,16 @@
 #include <stdio.h>
 
+/**
+ * main - print alphabet in lowercase
+ *
+ * Return: always 0
+ */
+
 int main(void)
 {
-    char ch = 'a';
-	while(ch <= 'z')
+	char ch = 'a';
+
+	while (ch <= 'z')
 	{
 		if (ch != 'e' && ch != 'q')
 		{
@@ -13,5 +20,5 @@ int main(void)
 	}
 	putchar('\n');
 
-    return 0;
+	return (0);
 }
