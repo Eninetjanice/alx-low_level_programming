@@ -8,5 +8,14 @@
  */
 void print_alphabet(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
+	char a = 'a';
+	int n = 0;
+
+	while (n < 26)
+	{
+		_putchar(a);
+		a++;
+		n++;
+	}
+	_putchar('\n');
 }
