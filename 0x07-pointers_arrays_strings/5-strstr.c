@@ -13,6 +13,12 @@ char *_strstr(char *haystack, char *needle)
 	char *j;
 
 	j = _strstr(haystack, needle);
+
+	if (*j != '\0')
+	{
+		haystack = needle;
 		j++;
+		return (haystack);
+	}
 	return ('\0');
 }
