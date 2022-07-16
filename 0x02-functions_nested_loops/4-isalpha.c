@@ -9,9 +9,9 @@ int _isalpha(int c)
 {
 	char lower;
 	char upper;
-	int isletter = 0
+	int isletter = 0;
 
-	for (lower = 'a'; lower <= 'z'; lower++;)
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		for (upper = 'A'; upper <= 'Z'; upper++)
 		{
