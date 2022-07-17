@@ -7,7 +7,7 @@
  * @src: character pointer
  * @dest: character pointer
  *
- * Return: return dest
+ * Return: Return dest
  */
 char *_strcpy(char *dest, char *src)
 {
