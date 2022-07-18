@@ -12,7 +12,7 @@
 int numchecker(char *j)
 {
 	int i;
-	
+
 	for (i = 0; j[i] != '\0'; i++)
 	{
 		if (j[i] < '0' || j[i] > '9')
