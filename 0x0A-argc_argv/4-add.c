@@ -12,6 +12,7 @@
 int numchecker(char *j)
 {
 	int i;
+	
 	for (i = 0; j[i] != '\0'; i++)
 	{
 		if (j[i] < '0' || j[i] > '9')
@@ -31,6 +32,7 @@ int numchecker(char *j)
 int main(int argc, char **argv)
 {
 	int sum, i;
+
 	sum = 0;
 
 	for (i = 1; i < argc; i++)
