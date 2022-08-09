@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _strlen - a function that concatenates two strings.
+ * _string_nconcat - a function that concatenates two strings.
  * @s1: string 1
  * @s2: string 2
  * @n: number of bytes from s2 to concanate to s1
