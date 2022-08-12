@@ -1,2 +1,2 @@
 # Bit manipulation in C
-## An ALX Low Level Programming Task
+## ALX Low Level Programming Task
