@@ -1,14 +1,25 @@
 CC = gcc
 SRC = main.c school.c
-OBJ = $(patsubst %.c,%.o,$(SRC))
+OBJ = $(SRC:.c=.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
-.PHONY : all clean oclean fclean re
-all : m.h $(OBJ)
-    $(CC) $(OBJ) -o $(NAME)
-clean :
-    $(RM) *~ $(NAME)
-oclean :
-    $(RM) $(OBJ)
-fclean : clean oclean
-re : oclean all
+
+.PHONY: all clean oclean fclean re
+
+# all == builds the executable
+all: m.h  ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+# deletes all tmp files & executable
+clean:
+	${RM} *~ ${NAME}
+
+# deletes the object files
+oclean:
+	${RM} ${OBJ}
+
+# deletes all tmp files, executable, & object files
+fclean: clean oclean
+
+# forces recompilation of all sources
+re: fclean all
